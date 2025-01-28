@@ -1,51 +1,50 @@
 [
   {
+    "title": "Navbar Extension Sample",
+    "name": "Navbar Extension Sample",
+    "description": "This sample shows how to contribute a cascading menu",
     "extensions": [
       {
         "type": "com.ibm.action.menu",
         "path": "com.ibm.navbar.order.3500",
         "applications": [
-          "News Menu"
+          "HCL Menu"
         ],
-        "name": "NewsMenuContainer",
+        "name": "HCLMenuContainer",
         "description": "This sample shows how to contribute a menu container",
-        "title": "News"
+        "title": "HCL"
       },
       {
         "type": "com.ibm.action.menu.link",
-        "path": "NewsMenuContainer.1",
+        "path": "HCLMenuContainer.1",
         "applications": [
-          "News Menu"
+          "HCL Menu"
         ],
-        "name": "News.CNN",
+        "name": "HCL Software",
         "description": "This sample shows how to contribute a submenu",
         "payload": {
-          "link": "http://cnn.com",
+          "link": "https://www.hcl-software.com",
           "target":"_blank"
         },
-        "title": "CNN"
+        "title": "HCL Software"
       },
       {
         "type": "com.ibm.action.menu.link",
-        "path": "NewsMenuContainer.2",
+        "path": "HCLMenuContainer.2",
         "applications": [
-          "News Menu"
+          "HCL Menu"
         ],
-        "name": "News.BBC",
+        "name": "HCL Verse",
         "description": "This sample shows how to contribute a submenu",
         "payload": {
-          "link": "http://bbc.com/news",
+          "link": "https://www.hcl-software.com/verse",
           "target":"_blank"
         },
-        "title": "BBC"
+        "title": "HCL Verse"
       }
     ],
-    "title": "News Menu",
-    "name": "News Menu",
-    "description": "This sample shows how to contribute a cascading menu",
-    "payload": {},
     "services": [
-      "TopNavigationBar"
+      "Verse"
     ]
   }
 ]

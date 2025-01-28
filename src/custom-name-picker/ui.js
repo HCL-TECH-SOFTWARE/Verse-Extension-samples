@@ -1,3 +1,4 @@
+/* (C) Copyright HCL Technologies Ltd. 2018, 2024. All Rights Reserved. */
 // Add event handlers for select boxes and call the API to load new people
 function addEventHandler(elem, eventType, handler) {
   if (elem.addEventListener) {

@@ -1,6 +1,6 @@
+/* (C) Copyright HCL Technologies Ltd. 2018, 2024. All Rights Reserved. */
 /**
  * Copyright IBM Corp. 2016
- * Copyright HCL Corp. 2019
  * Licensed under the MIT License.
  */
 console.log("Loaded Verse Developer page. Waiting for WidgetRegistryReady...");

@@ -1,25 +1,32 @@
 {
-  "name": "IBM Verse Developer Browser Extension",
+  "name": "HCL Verse Developer Browser Extension",
   "version": "1.1.0",
-  "manifest_version": 2,
-  "applications": { "gecko": {"id": "verse_dev_extension@ibm.com", "strict_min_version": "45.0"} },
+  "manifest_version": 3,
   "content_scripts": [ {
     "js": [ "contentscript.js"],
     "matches": [
-      "https://mail.notes.na.collabserv.com/verse*",
-      "https://mail.notes.ap.collabserv.com/verse*",
-      "https://mail.notes.ce.collabserv.com/verse*"
+      "https://server.com/*"
     ],
     "run_at": "document_start"
   }],
-  "web_accessible_resources": [
-    "page.js",
-    "applications.json",
-    "samples/templatedLink.html",
-    "samples/actions.html",
-    "custom-name-picker/index.html",
-    "hook-before-send/index.html",
-    "hook-before-send-disable/index.html",
-    "custom-directory-search/index.html"
-  ]
+  "web_accessible_resources": [{
+    "resources": [
+      "page.js",
+      "applications.json",
+      "custom-directory-search/index.html",
+      "custom-name-picker/index.html",
+      "first-application/actions.html",
+      "hook-before-send/index.html",
+      "hook-before-send-disable/index.html",
+      "live-text/sample1.html",
+      "live-text/sample2.html",
+      "modify-on-send/no-ui/index.html",
+      "modify-on-send/with-ui/index.html",
+      "third-party-chat-service/chat-service.html",
+      "third-party-chat-service/meeting-service.html"
+    ],
+    "matches": [
+      "https://server.com/*"
+    ]
+  }]
 }

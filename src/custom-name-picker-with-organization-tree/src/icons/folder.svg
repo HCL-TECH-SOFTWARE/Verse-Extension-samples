@@ -1,5 +1,0 @@
-<svg class="folder" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
-    <path d="M7 3V1H0v14h16V3H7zm8 11H1V4h14v10z"/>
-    <polygon class="folder-expand" display="none" points="8,11 11,8 5,8"/>
-    <polygon class="folder-collapse" display="none" points="8,7 11,10 5,10"/>
-</svg>

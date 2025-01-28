@@ -1,14 +1,15 @@
 [
   {
-    "name": "Widget Samples",
-    "title": "Widget Samples",
-    "description": "This samples demonstrates using the widget extension point",
+    "name": "Sample Application",
+    "title": "Getting Started",
+    "description": "A sample app to extend Verse",
+    "services": ["Verse"],
     "extensions": [
       {
         "name": "Person Action Sample",
         "type": "com.ibm.verse.ext.widget",
         "payload": {
-          "url": "${extensionPath}/samples/actions.html",
+          "url": "${extensionPath}/first-application/actions.html",
           "features": [
             "core"
           ],
@@ -23,13 +24,24 @@
                 "width": "900",
                 "height": "500"
               }
+            },
+            {
+              "id": "com.ibm.verse.ext.mail.compose",
+              "path": "mail.compose",
+              "text": "Mail Compose Action",
+              "title": "Mail Compost Action",
+              "location": "tab"
+            },
+            {
+              "id": "com.ibm.verse.ext.mail.read",
+              "path": "mail.read",
+              "text": "Mail Read Action",
+              "title": "Mail Read Action",
+              "location": "embedded"
             }
           ]
         }
       }
-    ],
-    "services": [
-      "Verse"
     ]
   }
 ]

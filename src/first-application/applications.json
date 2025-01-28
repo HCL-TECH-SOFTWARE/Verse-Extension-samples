@@ -1,14 +1,15 @@
 [
   {
-    "name": "Widget Samples",
-    "title": "Widget Sampled",
-    "description": "This samples demonstrates using the widget extension point",
+    "name": "Sample Application",
+    "title": "Getting Started",
+    "description": "A sample app to extend Verse",
+    "services": ["Verse"],
     "extensions": [
       {
         "name": "Person Action Sample",
         "type": "com.ibm.verse.ext.widget",
         "payload": {
-          "url": "${extensionPath}/samples/actions.html",
+          "url": "${extensionPath}/first-application/actions.html",
           "features": [
             "core"
           ],
@@ -16,8 +17,8 @@
             {
               "id": "com.ibm.verse.ext.person.action",
               "object": "com.ibm.appreg.object.person",
-              "text": "Person Widget Action",
-              "title": "Person Widget Action",
+              "text": "Person Action",
+              "title": "Person Action",
               "location": "window",
               "renderParams": {
                 "width": "900",
@@ -25,33 +26,22 @@
               }
             },
             {
-              "id": "com.ibm.verse.ext.mail.compose.action",
+              "id": "com.ibm.verse.ext.mail.compose",
               "path": "mail.compose",
               "text": "Mail Compose Action",
-              "title": "Mail Compose Action",
-              "location": "window",
-              "renderParams": {
-                "width": "900",
-                "height": "500"
-              }
+              "title": "Mail Compost Action",
+              "location": "tab"
             },
             {
-              "id": "com.ibm.verse.ext.mail.read.action",
+              "id": "com.ibm.verse.ext.mail.read",
               "path": "mail.read",
               "text": "Mail Read Action",
               "title": "Mail Read Action",
-              "location": "window",
-              "renderParams": {
-                "width": "900",
-                "height": "500"
-              }
+              "location": "embedded"
             }
           ]
         }
       }
-    ],
-    "services": [
-      "Verse"
     ]
   }
 ]

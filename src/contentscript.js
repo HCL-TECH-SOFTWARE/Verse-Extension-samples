@@ -1,9 +1,10 @@
+/* (C) Copyright HCL Technologies Ltd. 2018, 2024. All Rights Reserved. */
 /**
  * Copyright IBM Corp. 2016
  * Licensed under the MIT License.
  */
 
-var apps = chrome.extension.getURL('applications.json');
+var apps = chrome.runtime.getURL('applications.json');
 var xhr = new XMLHttpRequest();
 xhr.overrideMimeType("application/json");
 xhr.onreadystatechange = function () {
@@ -11,7 +12,7 @@ xhr.onreadystatechange = function () {
     var appsStr = updateExtensionURLs(xhr.responseText);
     localStorage.setItem('applications-json', appsStr);
     var pageScript = document.createElement('script');
-    pageScript.src = chrome.extension.getURL('page.js');
+    pageScript.src = chrome.runtime.getURL('page.js');
     pageScript.onload = function() {
       this.parentNode.removeChild(this);
     };
@@ -27,7 +28,7 @@ xhr.send();
  * @return {String} - Apps definitions with updated extension URLs
  */
 function updateExtensionURLs(definedApps) {
-  var baseURL = chrome.extension.getURL("");
+  var baseURL = chrome.runtime.getURL("");
   definedApps = definedApps.replace(/\$\{extensionPath\}\//g, baseURL);
   return definedApps;
 }

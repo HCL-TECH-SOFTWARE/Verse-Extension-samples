@@ -1,5 +1,4 @@
 [{
-  "app_id": "com.ibm.verse.ext.third.party.file",
   "name": "Third-party file repository integration",
   "title": "Third-party file repository integration",
   "description": "Integrate third-party file repository in Verse",

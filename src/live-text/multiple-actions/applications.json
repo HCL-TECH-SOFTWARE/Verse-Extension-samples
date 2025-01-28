@@ -6,12 +6,11 @@
     "extensions": [
       {
         "name": "Live Text Widget Action Sample One",
-        "ext_id": "com.ibm.verse.livetext.sample.one",
         "type": "com.ibm.verse.ext.liveText",
         "payload": {
           "text": "Live Text Widget Action One",
-          "href": "${extensionPath}/${1}/sample1.html?tel=${2}",
-          "recognizer": "Path:(live-text), Tel:([0-9]{8}).*",
+          "href": "${extensionPath}/live-text/sample1.html?tel=${0}",
+          "recognizer": "(([0-9]{3}))[-. ]?([0-9]{3})[-. ]?([0-9]{4})",
           "location": "window",
           "renderParams": {
             "width": "800",
@@ -26,12 +25,11 @@
         "type": "com.ibm.verse.ext.liveText",
         "payload": {
           "text": "Live Text Widget Action Two",
-          "href": "${extensionPath}/live-text/sample2.html?tel=${2}",
-          "recognizer": "Path:(live-text), Tel:([0-9]{8}).*"
+          "href": "${extensionPath}/live-text/sample2.html?tel=${1}",
+          "recognizer": "(([0-9]{3}))[-. ]?([0-9]{3})[-. ]?([0-9]{4})"
         }
       }
     ],
-    "payload": {},
     "services": [
       "Verse"
     ]

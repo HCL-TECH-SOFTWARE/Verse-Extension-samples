@@ -6,9 +6,8 @@
     "extensions": [
       {
         "type": "com.ibm.verse.ext.beforeOnSend",
-        "ext_id": "com.ibm.verse.ext.sample.beforeOnSend",
         "name": "Hook Before Send Extension",
-        "title": "Hook Before Send Extension",
+        "title": "Credit Card Check",
         "payload": {
           "url": "${extensionPath}/hook-before-send/index.html"
         }
